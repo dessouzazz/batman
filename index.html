@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/favicon/favicon_batman.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific-popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/jquery.magnific-popup.js"></script>
+ 
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+              mode: 'horizontal',
+              // captions: true,
+              auto: true,
+              pager: true,
+              //controls: true
+          });
+    
+          $('#galeria-fotos').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true,
+                titleSrc: function(item) {
+                    return item.el.attr('title');
+                }
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function(element) {
+                    return element.find('img');
+                }
+            }
+            
+        });
+    
+        });
+    </script>
+
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="container">
+            <img src="imagens/logo/logo_batman.png" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="internas/filmes.html">Filmes</a></li>
+                    <li><a href="internas/trajes.html">Trajes</a></li>
+                    <li><a href="internas/personagens.html">Personagens</a></li>
+                    <li><a href="internas/animacoes.html">Animações</a></li>
+                    <li><a href="internas/autor.html">Autor</a></li>
+                    <li><a href="internas/trailer.html">Videos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="titulo-secao">Ultimo Lançamento</h1>
+        <section id="banners">
+            <div class="container">
+                <ul class="slider">
+                    <li><img src="imagens/fotos/banner4.jpg"></li>
+                    <li><img src="imagens/fotos/banner2.jpg"></li>
+                    <li><img src="imagens/fotos/banner3.jpg"></li>
+                </ul>
+            </div>
+        </section>
+        <p>Batman se aventura no submundo de Gotham City quando um assassino sádico deixa para trás um rastro de pistas enigmáticas. À medida que as evidências começam a chegar mais perto de casa e a escala dos planos do criminoso se torna clara, ele deve forjar novos relacionamentos, desmascarar o culpado e trazer justiça ao abuso de poder e à corrupção que há muito atormentam a metrópole.</p>
+
+        <p>
+            Depois de diferentes reclamações sobre a versão do Batman de Ben Affleck, o Homem-Morcego do diretor Matt Reeves - vivido por Robert Pattinson - foi aguardado com grande antecipação pelos fãs e não decepcionou. O filme conquistou incríveis 90% de aprovação dos críticos no site Rotten Tomatoes. A trama se passa no segundo ano do jovem Bruce como Batman e mostra melhor o lado detetive do morcego de Gotham.
+        </p>
+
+        <p>elenco:</p>
+        <div id="elenco">
+                <div>
+                    <img src="imagens/elenco/robert.jpg" alt="">
+                    <p>Robert Pattinson</p>
+                </div>
+                <div>
+                    <img src="imagens/elenco/zoe.jpg" alt="">
+                    <p>Zoë Kravitz</p>
+                </div>
+                <div>
+                    <img src="imagens/elenco/paul.jpg" alt="">
+                    <p>Paul Dano</p>
+                </div>
+                <div>
+                    <img src="imagens/elenco/colin.jpg" alt="">
+                    <p>Colin Farrell</p>
+                </div>
+                <div>
+                    <img src="imagens/elenco/jeffrey.jpg" alt="">
+                    <p>Jeffrey Wright</p>
+                </div>
+                <div>
+                    <img src="imagens/elenco/andy.jpg" alt="">
+                    <p>Andy Serkis</p>
+                </div>
+                <div>
+                    <img src="imagens/elenco/john.jpg" alt="">
+                    <p>John Turturro</p>
+                </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="titulo-secao">Sobre o Batman:</h2>
+        <p>Em nome de seus pais assassinados, Bruce Wayne trava uma guerra eterna contra os criminosos de Gotham   City. Ele é vingança. Ele é a noite. Ele é o Batman.
+            Um dos personagens fictícios mais emblemáticos do mundo, Batman dedicou sua vida a uma cruzada sem fim, uma guerra contra todos os criminosos em nome de seus pais assassinados, que foram tirados dele quando ele era apenas uma criança. Desde aquela noite trágica, ele treinou seu corpo e mente até a perfeição física para ser um super-herói feito por si mesmo. Ele desenvolveu um arsenal de tecnologia que envergonharia a maioria dos exércitos. E ele montou equipes de seus companheiros Super Heróis da DC, como a Liga da Justiça, os Renegados e Batman, Incorporated.
+        
+            Um playboy bilionário durante o dia, a vida dupla de Bruce Wayne oferece a ele o conforto de uma vida sem preocupações financeiras, um mordomo leal que se tornou guardião e a base perfeita de operações na antiga rede de cavernas sob a extensa propriedade de sua família. À noite, no entanto, ele abandona toda a pretensão, veste sua icônica capa recortada e capuz pontudo e toma as ruas sombrias, céus e telhados de Gotham City.
+        </p>
+    </div>
+
+    <section id="aparicao">
+        <div class="container">
+            <h2 class="titulo-secao">Primeira Aparição:</h2>
+            <p>O herói apareceu pela primeira vez na Detective Comics #27 e, apesar do quadrinho contar com o mês de maio impresso em sua capa, o lançamento aconteceu no terceiro mês de 1939</p>
+            <img src="imagens/fotos/primeira_aparicao.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="fotos">
+        <div class="container">
+            <h2 class="titulo-secao">Galeria</h2>
+            <div id="galeria-fotos">
+                <a href="imagens/galeria/foto1.jpeg" title="Foto 01"><img src="imagens/galeria/foto1.jpeg" alt=""></a>
+                <a href="imagens/galeria/foto2.jpg" title="Foto2"><img src="imagens/galeria/foto2.jpg" alt=""></a>
+                <a href="imagens/galeria/foto3.png" title="Foto 03"><img src="imagens/galeria/foto3.png" alt=""></a>
+                <a href="imagens/galeria/foto4.jpg" title="Foto 04"><img src="imagens/galeria/foto4.jpg" alt=""></a>
+                <a href="imagens/galeria/foto5.jpg" title="Foto 05"><img src="imagens/galeria/foto5.jpg" alt=""></a>
+                <a href="imagens/galeria/foto6.jpg" title="Foto 06"><img src="imagens/galeria/foto6.jpg" alt=""></a>
+                <a href="imagens/galeria/foto7.jpg" title="Foto 07"><img src="imagens/galeria/foto7.jpg" alt=""></a>
+                <a href="imagens/galeria/foto8.jpg" title="Foto 08"><img src="imagens/galeria/foto8.jpg" alt=""></a>
+                <a href="imagens/galeria/foto9.jpg" title="Foto 09"><img src="imagens/galeria/foto9.jpg" alt=""></a>
+                <a href="imagens/galeria/foto10.jpg" title="Foto 10"><img src="imagens/galeria/foto10.jpg" alt=""></a>
+                <a href="imagens/galeria/foto11.jpg" title="Foto 11"><img src="imagens/galeria/foto11.jpg" alt=""></a>
+                <a href="imagens/galeria/foto12.jpeg" title="Foto 12"><img src="imagens/galeria/foto12.jpeg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape">
+        <p>Entre em contato conosco:</p>
+        <a href="https://www.instagram.com/batman/?hl=en">Instagram Oficial</a>
+        <p>Site construído para disciplina de Introdução à Tecnologia à Tecnologia Web do 1º périodo do curso de Sistema de Informação do UniRios</p>
+
+    </footer>
+</body>
+</html>

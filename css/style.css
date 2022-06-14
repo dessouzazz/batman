@@ -1,0 +1,179 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-1: #b80707;
+    --color-2: #000;
+    --color-3: #999;
+    --color-4: #fff;
+}
+
+
+body{
+    background-color: #000;
+    color: aliceblue;
+}
+
+.titulo-secao{
+    margin-bottom: 20px;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#cabecalho{
+    column-rule: var(--color-4);
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho .container img{
+    height: 72px;
+    margin: 0 auto;
+}
+
+#cabecalho nav li{
+    display: inline-block;
+}
+
+#cabecalho nav li a{
+    text-decoration: none;
+    color: var(--color-4);
+    display: block;
+    padding: 15px 30px;
+    transition: all 0.3s linear;
+}
+
+#cabecalho nav li a:hover{
+    background-color: var(--color-1); 
+    color: var(--color-4)
+}
+
+
+#elenco{
+    display: grid;
+    grid-template-columns:repeat( 4, auto);
+    grid-gap: 10px;
+}
+
+#fotos{
+    background-color: #DDD;
+    padding: 50px 0;
+}
+
+#fotos #galeria-fotos{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 30px;
+}
+
+#fotos h2{
+    color: var(--color-2);
+}
+
+#fotos #galeria-fotos img{
+    display: block;
+    width: 100%;
+}
+
+#fotos #galeria-fotos img:hover{
+    transform: scale(1.1);
+}
+
+
+#aparicao img{
+    max-height: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#rodape{
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #8f0303;
+    color: var(--color-2);
+    margin-top: 20px;
+}
+
+#rodape a{
+    color: var(--color-2);
+}
+
+/* pagina filmes */
+
+#filmes img{
+    max-height: 350px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* pagina trajes */
+#trajes img{
+    max-height: 500px;
+    max-width: 400px;
+}
+
+#trajes #roupas{
+    display: grid;
+    grid-template-columns:repeat( 2, auto);
+    align-items: center;
+}
+
+#trajes h3{
+    margin-top: 20px;
+}
+
+/* pagina personagens */
+#personagens img{
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#personagens p{
+    margin-bottom: 20px;
+}
+
+/* pagina animações */
+#animacoes img{
+    max-height: 250px;
+    margin-bottom: 20px;
+}
+
+#animacoes p{
+    margin-bottom: 20px;
+}
+
+/* pagina autor */
+#autor h2{
+    margin-top: 20px;
+}
+
+#autor p{
+    margin-top: 20px;
+}
+
+#autor img{
+    max-height: 400px;
+}
+
+/* pagina trailer */
+#trailer h2{
+    margin-top: 20px;
+}
